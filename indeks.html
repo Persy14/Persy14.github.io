@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asep Gak Bisa Main Lance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ff6347; /* Tomato color */
+            text-shadow: 2px 2px #ffe4e1; /* Light shadow for 3D effect */
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .emojis {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin: 10px;
+            transition: background-color 0.3s ease; /* Added transition for button */
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.1); /* Scale on hover */
+        }
+        .highlight {
+            color: #ff4500; /* Orange Red */
+            font-weight: bold;
+        }
+        .message {
+            font-size: 5em;
+            color: #ff4500; /* Orange Red */
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <h1>Asep Gak Bisa Main Lance! 😂</h1>
+        <p class="emojis">😅😅😅</p>
+        
+        <p>Asep sabe bangai imat Lance. 🤦‍♂️</p>
+        <p class="highlight">"paken lance lon bangai that hana lagei lance persy yg jago?" keluh jih.</p>
+        <p>Si birin ngen bang alex pun berkata, "Asep, kah cuma jeut kapakek Bane agai!"</p>
+
+        <p>Tapi Asep tetap kreuh utak han ipateh ipeuget pilihan! 💪</p>
+        
+        <button id="btnLance" onclick="showLanceTolol()">Mat Lance lom!</button>
+        <button id="btnHeroLain" onclick="showHeroLain()">pakek Hero Lain</button>
+        
+        <p id="pesan" style="margin-top: 20px; font-size: 1.3em;"></p>
+    </div>
+
+    <script>
+        function showLanceTolol() {
+            document.body.innerHTML = `
+                <div class="message">BEK KAMAT LE LANCE HAI BANGAI HAI! 😂</div>
+                <button onclick="goBack()">Kembali</button>
+            `;
+        }
+
+        function showHeroLain() {
+            document.body.innerHTML = `
+                <div class="message">NYAN KAEU MVP AJU. KAH EMANG EL BANE! 🏆</div>
+                <button onclick="goBack()">Kembali</button>
+            `;
+        }
+
+        function goBack() {
+            document.body.innerHTML = `
+                <div id="main-content">
+                    <h1>Asep Gak Bisa Main Lance! 😂</h1>
+                    <p class="emojis">😅😅😅</p>
+                    
+                    <p>Asep sabe bangai imat Lance. 🤦‍♂️</p>
+                    <p class="highlight">"paken lance lon bangai that hana lagei lance persy yg jago?" keluh jih.</p>
+                    <p>Si birin ngen bang alex pun berkata, "Asep, kah cuma jeut kapakek Bane agai!"</p>
+
+                    <p>Tapi Asep tetap kreuh utak han ipateh ipeuget pilihan! 💪</p>
+                    
+                    <button id="btnLance" onclick="showLanceTolol()">Mat Lance lom!</button>
+                    <button id="btnHeroLain" onclick="showHeroLain()">pakek Hero Lain</button>
+                    
+                    <p id="pesan" style="margin-top: 20px; font-size: 1.3em;"></p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
